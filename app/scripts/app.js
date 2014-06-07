@@ -4,8 +4,7 @@ angular.module('cometaApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute',
-  'ui.bootstrap'
+  'ngRoute'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
