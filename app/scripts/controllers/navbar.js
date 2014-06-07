@@ -8,6 +8,9 @@ angular.module('cometaApp')
     }, {
       'title': 'Settings',
       'link': '/settings'
+    }, {
+      'title': 'Order',
+      'link':'/order'
     }];
     
     $scope.logout = function() {

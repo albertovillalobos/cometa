@@ -4,7 +4,8 @@ angular.module('cometaApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
@@ -23,6 +24,11 @@ angular.module('cometaApp', [
       .when('/settings', {
         templateUrl: 'partials/settings',
         controller: 'SettingsCtrl',
+        authenticate: true
+      })
+      .when('/order', {
+        templateUrl: 'partials/order',
+        controller: 'OrderCtrl',
         authenticate: true
       })
       .otherwise({
